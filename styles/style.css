@@ -13,9 +13,12 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -35,4 +38,225 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  inline-size: 1140px;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 54px;
+}
+
+.content__list {
+  overflow-y: auto;
+  height: 298px;
+  position: relative;
+}
+
+.content__details {
+  flex-grow: 1;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  position: relative;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 5px;
+}
+
+
+
+.title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: inherit;
+  margin: 2px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-within {
+  outline: 1px solid #fff;
+}
+
+.content__video-card-title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: inherit;
+  margin-bottom: 6px;
+}
+
+.content__video-card-title:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-description {
+  font-family: "Fira Sans Condensed";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: inherit;
+}
+
+.content__video-card-description:hover {
+  text-decoration: underline;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.search-form__textfield {
+  font-family: "Fira Sans Condensed", sans-serif;
+  border: 1px solid #fff;
+  border-style: solid none;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 18px;
+  width: 225px;
+  height: 27px;
+  font-weight: 400;
+  color: inherit;
+  outline: none;
+  appearance: none;
+}
+
+.search-form__pseudo-checkbox {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.button {
+  font-family: "Fira Sans Condensed";
+  cursor: pointer;
+  background-color: transparent;
+  height: 34px;
+  border: 1px solid #fff;
+  color: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.search-form__submit-button{
+  width: 194px;
+  height: 34px;
+}
+
+.search-form__submit-button:focus {
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
+
+.more-button {
+  width: 399px;
+}
+
+.more-button:focus {
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button:active {
+  background-color: #545050;
+}
+
+.search-form__textfield:active {
+  color: inherit;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox {
+  content: '';
+
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
